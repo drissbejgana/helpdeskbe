@@ -1,0 +1,554 @@
+[
+    {
+        "model":"Helpdesk.Priorite",
+        "pk":1,
+        "fields": {
+            "namefr":"Normal",
+            "isdefault":1,
+            "prioritecolor":"Blue",
+            "prioriteclass":"Primery",
+            "prioriteorder":1
+        }
+    },
+    {
+        "model":"Helpdesk.Priorite",
+        "pk":2,
+        "fields": {
+            "namefr":"Faible",
+            "isdefault":0,
+            "prioritecolor":"Grey",
+            "prioriteclass":"Default",
+            "prioriteorder":2
+        }
+    },
+    {
+        "model":"Helpdesk.Priorite",
+        "pk":3,
+        "fields": {
+            "namefr":"Haute",
+            "isdefault":0,
+            "prioritecolor":"Red",
+            "prioriteclass":"Danger",
+            "prioriteorder":3
+        }
+    },
+    {
+        "model":"Helpdesk.Typecategorie",
+        "pk":1,
+        "fields": {
+            "namefr":"Probléme réseaux"
+        }
+    },
+    {
+        "model":"Helpdesk.Typecategorie",
+        "pk":2,
+        "fields": {
+            "namefr":"Probléme systéme et Applications"
+        }
+    },
+    {
+        "model":"Helpdesk.Typecategorie",
+        "pk":3,
+        "fields": {
+            "namefr":"Probléme securité"
+        }
+    },
+    {
+        "model":"Helpdesk.Typecategorie",
+        "pk":4,
+        "fields": {
+            "namefr":"Demande"
+        }
+    },
+    {
+        "model":"Helpdesk.Typecategorie",
+        "pk":5,
+        "fields": {
+            "namefr":"Incident"
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":1,
+        "fields": {
+            "namefr":"Coupure Internet",
+            "typecategorie":1
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":2,
+        "fields": {
+            "namefr":"Coupure Intranet",
+            "typecategorie":1
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":3,
+        "fields": {
+            "namefr":"Lenteur",
+            "typecategorie":1
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":4,
+        "fields": {
+            "namefr":"Instabilité",
+            "typecategorie":1
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":5,
+        "fields": {
+            "namefr":"Démarrage système d'exploitation",
+            "typecategorie":2
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":6,
+        "fields": {
+            "namefr":"Licence",
+            "typecategorie":2
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":7,
+        "fields": {
+            "namefr":"Application MI",
+            "typecategorie":2
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":8,
+        "fields": {
+            "namefr":"Application Windows Office",
+            "typecategorie":2
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":9,
+        "fields": {
+            "namefr":"Authentification",
+            "typecategorie":3
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":10,
+        "fields": {
+            "namefr":"Intégrite données",
+            "typecategorie":3
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":11,
+        "fields": {
+            "namefr":"Disponibilité système",
+            "typecategorie":3
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":12,
+        "fields": {
+            "namefr":"Antivirus",
+            "typecategorie":3
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":13,
+        "fields": {
+            "namefr":"Firewall",
+            "typecategorie":3
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":14,
+        "fields": {
+            "namefr":"Configuration",
+            "typecategorie":4
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":15,
+        "fields": {
+            "namefr":"Assistance",
+            "typecategorie":4
+        }
+    },
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":16,
+        "fields": {
+            "namefr":"Formation",
+            "typecategorie":4
+        }
+    },
+    
+    {
+        "model":"Helpdesk.Categorie",
+        "pk":17,
+        "fields": {
+            "namefr":"Incident",
+            "typecategorie":5
+        }
+    },
+    {
+        "model":"Helpdesk.Etat",
+        "pk":1,
+        "fields": {
+            "namefr":"Enregistrée",
+            "isdefault":1,
+            "etatcolor":"Orange",
+            "etatclass":"warning",
+            "etatorder":1
+        }
+    },
+    {
+        "model":"Helpdesk.Etat",
+        "pk":2,
+        "fields": {
+            "namefr":"Ouvert",
+            "isdefault":0,
+            "etatcolor":"Blue",
+            "etatclass":"primary",
+            "etatorder":2
+        }
+    },
+    {
+        "model":"Helpdesk.Etat",
+        "pk":3,
+        "fields": {
+            "namefr":"Résolu",
+            "isdefault":0,
+            "etatcolor":"Green",
+            "etatclass":"success",
+            "etatorder":3
+        }
+    },
+    {
+        "model":"Helpdesk.Etat",
+        "pk":4,
+        "fields": {
+            "namefr":"Clôturé",
+            "isdefault":0,
+            "etatcolor":"Grey",
+            "etatclass":"secondary",
+            "etatorder":4
+        }
+    },
+
+    {
+        "model":"Helpdesk.Typeentite",
+        "pk":1,
+        "fields": {
+            "namefr":"Province"
+        }
+    },
+    {
+        "model":"Helpdesk.Typeentite",
+        "pk":2,
+        "fields": {
+            "namefr":"Division"
+        }
+    },
+    {
+        "model":"Helpdesk.Typeentite",
+        "pk":3,
+        "fields": {
+            "namefr":"Service"
+        }
+    },
+    {
+        "model":"Helpdesk.Typeentite",
+        "pk":4,
+        "fields": {
+            "namefr":"AAL"
+        }
+    },
+    {
+        "model":"Helpdesk.Typeentite",
+        "pk":5,
+        "fields": {
+            "namefr":"Caidat"
+        }
+    },
+    {
+        "model":"Helpdesk.Typeentite",
+        "pk":6,
+        "fields": {
+            "namefr":"Pachalik"
+        }
+    },
+    {
+        "model":"Helpdesk.Typeentite",
+        "pk":7,
+        "fields": {
+            "namefr":"Cercle"
+        }
+    },
+    {
+        "model":"Helpdesk.Typeentite",
+        "pk":8,
+        "fields": {
+            "namefr":"AA"
+        }
+    },
+    {
+        "model":"Helpdesk.Typeentite",
+        "pk":8,
+        "fields": {
+            "namefr":"Commune"
+        }
+    }, { 
+        "model":"Helpdesk.Entite",
+        "pk":1,
+        "fields": {
+            "namefr":"Province de Chichaoua",
+            "shortename":"PCH",
+            "typeentite":1
+          }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":2,
+            "fields": {
+                "namefr":"Cabinet de M. Le GOUVERNEUR",
+                "shortename":"CABINET",
+                "typeentite":1,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":3,
+            "fields": {
+                "namefr":"Secrétariat Général",
+                "shortename":"SG",
+                "typeentite":1,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":4,
+            "fields": {
+                "namefr":"Division de Ressources Humaines",
+                "shortename":"DRH",
+                "typeentite":2,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":5,
+            "fields": {
+                "namefr":"Division de l'Action Sociale",
+                "shortename":"DAS",
+                "typeentite":2,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":6,
+            "fields": {
+                "namefr":"Division  des  affaires  Economiques  et  Sociales",
+                "shortename":"DAES",
+                "typeentite":2,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":7,
+            "fields": {
+                "namefr":"Division des Affaires Rurales",
+                "shortename":"DAR",
+                "typeentite":2,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":8,
+            "fields": {
+                "namefr":"Division des Collectivités Locales",
+                "shortename":"DCL",
+                "typeentite":2,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":9,
+            "fields": {
+                "namefr":"Division de l'Urbanisme et de l'Environnement",
+                "shortename":"DUE",
+                "typeentite":2,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":10,
+            "fields": {
+                "namefr":"Division des Equipements",
+                "shortename":"DE",
+                "typeentite":2,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":11,
+            "fields": {
+                "namefr":" Division du Budget et des Marchés",
+                "shortename":"DBM",
+                "typeentite":2,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":12,
+            "fields": {
+                "namefr":"Division des Affaires Intérieures",
+                "shortename":"DAI",
+                "typeentite":2,
+                "entiteparrent":1
+              }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":14,
+            "fields": { "namefr":"Cellule RAMED","shortename":"SI", "typeentite":1, "entiteparrent":1}
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":15,
+            "fields": { "namefr" : "Service de la gestion des ressources humaines", "shortename":"SRH","typeentite":3,"entiteparrent":4 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":16,
+            "fields": { "namefr" : "Service de la formation et Systéme d'information", "shortename":"SFSI","typeentite":3,"entiteparrent":4 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":17,
+            "fields": { "namefr" : "Service de Suivi-Evaluation","shortename":"SSE","typeentite":3,"entiteparrent":5 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":18,
+            "fields": { "namefr" : "Service de communication","shortename":"SC","typeentite":3,"entiteparrent":5 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":19,
+            "fields": { "namefr" : "Service de formation et de renforcement de capacité","shortename":"SFRC","typeentite":3,"entiteparrent":5 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":20,
+            "fields":{ "namefr" : "Service de l'action économique et du controle","shortename":"SAEC","typeentite":3,"entiteparrent":6 } 
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":21,
+            "fields": { "namefr" : "Service des actions de solidarité et des affaires de proximité","shortename":"SASAP","typeentite":3,"entiteparrent":6 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":22,
+            "fields": { "namefr" : "Service de promotion des activités socioculturelles et  sportives","shortename":"SPASP","typeentite":3,"entiteparrent":6 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":23,
+            "fields": { "namefr" : "Service des Terres collectives","shortename":"STC","typeentite":3,"entiteparrent":7 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":24,
+            "fields": { "namefr" : "Service du Développement Rural","shortename":"SDR","typeentite":3,"entiteparrent":7 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":25,
+            "fields": { "namefr" : "Service de l'état civil","shortename":"SEC","typeentite":3,"entiteparrent":8 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":26,
+            "fields": { "namefr" : "Service des conseils élus","shortename":"SCE","typeentite":3,"entiteparrent":8 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":27,
+            "fields": { "namefr" : "Services des finances locales et personnels communaux","shortename":"SFLPC","typeentite":3,"entiteparrent":8 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":28,
+            "fields": { "namefr" : "Services du patrimoine de la planification et de l'équipement","shortename":"SPPE","typeentite":3,"entiteparrent":8 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":29,
+            "fields": { "namefr" : "Service de l'urbanisme et de la construction","shortename":"SUC","typeentite":3,"entiteparrent":9 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":30,
+            "fields": { "namefr" : "Service de l'environnement","shortename":"SE","typeentite":3,"entiteparrent":9 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":31,
+            "fields": { "namefr" : "Service des études techniques","shortename":"SET","typeentite":3,"entiteparrent":10 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":32,
+            "fields": { "namefr" : "Service des équipements et infrastructures","shortename":"SEI","typeentite":3,"entiteparrent":10 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":33,
+            "fields":{ "namefr" : "Service de validation","shortename":"SV","typeentite":3,"entiteparrent":11 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":34,
+            "fields":{ "namefr" : "Service des marchés","shortename":"SM","typeentite":3,"entiteparrent":11 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":35,
+            "fields":{ "namefr" : "Service de budget et de la comptabilité","shortename":"SBC","typeentite":3,"entiteparrent":11 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":36,
+            "fields":{ "namefr" : "Service logistique et archives","shortename":"SLA","typeentite":3,"entiteparrent":11 }
+        },
+        { 
+            "model":"Helpdesk.Entite",
+            "pk":37,
+            "fields":{ "namefr" : "Poste de Coordination Interministérielle","shortename":"PCI","typeentite":3,"entiteparrent":10 }
+        }
+
+]
